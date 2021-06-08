@@ -19,6 +19,7 @@ function App() {
   }, [term]);
 
   return (
+    <div style={{backgroundColor:"#276749"}}>
     <div className="container mx-auto">
       <ImageSearch searchText={(text) => setTerm(text)} />
 
@@ -29,6 +30,7 @@ function App() {
           <ImageCard key={image.id} image={image} />
         ))}
       </div>}
+    </div>
     </div>
   );
 }
